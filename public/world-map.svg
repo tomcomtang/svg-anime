@@ -23,7 +23,7 @@
     fill: #2F6DF6 !important;
   }
   /* 为贝塞尔曲线设置透明填充 */
-  #bezier-curve, #bezier-curve2, #bezier-curve6 {
+  #bezier-curve, #bezier-curve2, #bezier-curve3, #bezier-curve5, #bezier-curve6, #bezier-curve7 {
     fill: none !important;
   }
   /* 为移动箭头设置蓝色填充 */
@@ -663,6 +663,147 @@
                      dur="0.3s"
                      fill="freeze"
                      begin="2.4s"/>
+        </polygon>
+    </g>
+    
+    <!-- 第七个贝塞尔曲线 - 到利雅得 -->
+    <path id="bezier-curve7" d="M 660 460 Q 580 470 535 470" 
+          fill="none" 
+          stroke="#2F6DF6" 
+          stroke-width="1.5" 
+          opacity="0.8"
+          stroke-dasharray="400"
+          stroke-dashoffset="400">
+        <animate attributeName="stroke-dashoffset"
+                 from="400"
+                 to="0"
+                 dur="4.5s"
+                 fill="freeze"
+                 id="draw-animation7"/>
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-400"
+                 dur="2.1s"
+                 fill="freeze"
+                 begin="1.5s"
+                 id="erase-animation7"/>
+    </path>
+    
+    <!-- 第七个移动的箭头 - 到利雅得 -->
+    <g id="moving-arrow7">
+        <!-- 箭头主体 -->
+        <polygon points="0,-4 8,0 0,4" 
+                 fill="#2F6DF6" 
+                 opacity="0.9">
+            <animateMotion 
+                dur="1.5s" 
+                repeatCount="0"
+                path="M 660 460 Q 580 470 535 470"
+                rotate="auto"
+                calcMode="linear"
+                fill="freeze"
+                begin="0s"
+                id="arrow-motion7"/>
+            <animate attributeName="opacity"
+                     from="0.9"
+                     to="0"
+                 dur="0.3s"
+                 fill="freeze"
+                 begin="2.1s"/>
+        </polygon>
+    </g>
+    
+    <!-- 第三个贝塞尔曲线 - 到巴西 -->
+    <path id="bezier-curve3" d="M 660 460 Q 450 580 310 565" 
+          fill="none" 
+          stroke="#2F6DF6" 
+          stroke-width="1.5" 
+          opacity="0.8"
+          stroke-dasharray="450"
+          stroke-dashoffset="450">
+        <animate attributeName="stroke-dashoffset"
+                 from="450"
+                 to="0"
+                 dur="1.5s"
+                 fill="freeze"
+                 id="draw-animation3"/>
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-450"
+                 dur="1s"
+                 fill="freeze"
+                 begin="1.5s"
+                 id="erase-animation3"/>
+    </path>
+    
+    <!-- 第三个移动的箭头 - 到巴西 -->
+    <g id="moving-arrow3">
+        <!-- 箭头主体 -->
+        <polygon points="0,-4 8,0 0,4" 
+                 fill="#2F6DF6" 
+                 opacity="0.9">
+            <animateMotion 
+                dur="1.25s" 
+                repeatCount="0"
+                path="M 660 460 Q 450 580 310 565"
+                rotate="auto"
+                calcMode="linear"
+                fill="freeze"
+                begin="0s"
+                id="arrow-motion3"/>
+            <animate attributeName="opacity"
+                     from="0.9"
+                     to="0"
+                 dur="0.3s"
+                 fill="freeze"
+                 begin="2.4s"/>
+        </polygon>
+    </g>
+    
+    <!-- 第五个贝塞尔曲线 - 到新加坡 -->
+    <path id="bezier-curve5" d="M 660 460 Q 665 490 655 500" 
+          fill="none" 
+          stroke="#2F6DF6" 
+          stroke-width="1.5" 
+          opacity="0.8"
+          stroke-dasharray="200"
+          stroke-dashoffset="200">
+        <animate attributeName="stroke-dashoffset"
+                 from="200"
+                 to="0"
+                 dur="5.5s"
+                 fill="freeze"
+                 id="draw-animation5"/>
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-200"
+                 dur="1s"
+                 fill="freeze"
+                 begin="1.5s"
+                 id="erase-animation5"/>
+    </path>
+    
+    <!-- 第五个移动的箭头 - 到新加坡 -->
+    <g id="moving-arrow5">
+        <!-- 箭头主体 -->
+        <polygon points="0,-4 8,0 0,4" 
+                 fill="#2F6DF6" 
+                 opacity="0.9">
+            <animateMotion 
+                dur="1.25s" 
+                repeatCount="0"
+                path="M 660 460 Q 665 490 655 500"
+                rotate="auto"
+                calcMode="linear"
+                fill="freeze"
+                begin="0s"
+                id="arrow-motion5"/>
+            <animate attributeName="opacity"
+                     from="0.9"
+                     to="0"
+                 dur="0.3s"
+                 fill="freeze"
+                 begin="1.8s"/>
         </polygon>
     </g>
 </g>
