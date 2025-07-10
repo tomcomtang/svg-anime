@@ -457,6 +457,61 @@
         <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
         <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
     </g>
+    
+    <!-- 第三个服务器图标 - 戈亚尼亚 -->
+    <g id="data-node-brazil" transform="translate(290,565) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
+    
+    <!-- 第四个服务器图标 - 东京 -->
+    <g id="data-node-tokyo" transform="translate(720,380) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
+    
+    <!-- 第五个服务器图标 - 新加坡 -->
+    <g id="data-node-singapore" transform="translate(650,520) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
+    
+    <!-- 第六个服务器图标 - 克罗地亚和奥地利交界 -->
+    <g id="data-node-croatia" transform="translate(440,400) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
+    
+    <!-- 第七个服务器图标 - 沙特阿拉伯利雅得 -->
+    <g id="data-node-riyadh" transform="translate(515,470) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
     <!-- 连接贝塞尔曲线 -->
     <path id="bezier-curve" d="M 660 460 Q 465 350 278 364" 
           fill="none" 
