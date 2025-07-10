@@ -16,7 +16,7 @@
   }
   /* 为源站图标设置蓝色 */
   #origin-node circle:nth-child(2) {
-    fill: #2F6DF6 !important;
+    fill:rgb(122, 138, 228) !important;
   }
   /* 为水滴图标设置蓝色 */
   #locate-icon path {
@@ -431,23 +431,20 @@
     <path id="zw" d="M468.52,578.226l7.755,8.757l5.946,1.513l3.984-6.248l-0.312-8.281l-6.465-3.337l-2.431,1.098l-3.62,5.524l-5.014-0.053L468.52,578.226L468.52,578.226z"/>
     
     <!-- Origin Node - Hong Kong -->
-    <g id="origin-node">
-        <!-- 外层环 -->
-        <circle cx="675" cy="463" r="8" fill="none" stroke="#2F6DF6" stroke-width="2" opacity="0.9"/>
-        <!-- 里层圆圈 - 纯色蓝色 -->
-        <circle cx="675" cy="463" r="5" fill="#2F6DF6" opacity="0.9"/>
+    <g id="origin-node" transform="translate(675,463) scale(0.75) translate(-675,-463)">
+        <ellipse cx="675" cy="463" rx="10" ry="6" fill="#fff" stroke="#5078ef" stroke-width="5" opacity="0.9"/>
     </g>
     
     <!-- Data Nodes - Major Cities -->
     <!-- New York -->
-    <g id="data-node-ny" transform="translate(255,360) scale(1.2)">
-        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#ef4444" opacity="0.8"/>
+    <g id="data-node-ny" transform="translate(260,362) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
         <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
         <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
         <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
-        <circle cx="-2" cy="-4" r="0.6" fill="#dc2626" opacity="0.8"/>
-        <circle cx="-2" cy="0" r="0.6" fill="#dc2626" opacity="0.8"/>
-        <circle cx="-2" cy="4" r="0.6" fill="#dc2626" opacity="0.8"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
     </g>
     <!-- 连接贝塞尔曲线 -->
     <path id="bezier-curve" d="M 660 460 Q 465 350 278 364" 
@@ -482,12 +479,16 @@
     </g>
     
     <!-- 水滴形定位图标（在origin节点上方） -->
-    <g id="locate-icon" transform="translate(675,463) scale(0.7) translate(0,-26)">
-        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="3s" repeatCount="indefinite"/>
-        <!-- 水滴主体 -->
-        <path d="M675 437 C689 438, 689 453, 675 468 C661 453, 661 438, 675 437 Z" fill="#2F6DF6" opacity="0.9"/>
-        <!-- 白色圆心 -->
-        <circle cx="675" cy="449" r="5.5" fill="#fff" opacity="0.9"/>
+    <g id="locate-icon" transform="translate(675,461)">
+      <g id="locate-icon-scale" transform="scale(0.7) translate(0,-26)">
+        <g id="locate-icon-anim">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="3s" repeatCount="indefinite"/>
+          <!-- 水滴主体 -->
+          <path d="M0 0 C14 1, 14 16, 0 31 C-14 16, -14 1, 0 0 Z" fill="#2F6DF6" opacity="0.9"/>
+          <!-- 白色圆心 -->
+          <circle cx="0" cy="12" r="5.5" fill="#fff" opacity="0.9"/>
+        </g>
+      </g>
     </g>
 </g>
 </svg>
