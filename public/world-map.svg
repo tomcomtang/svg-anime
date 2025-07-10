@@ -23,11 +23,11 @@
     fill: #2F6DF6 !important;
   }
   /* 为贝塞尔曲线设置透明填充 */
-  #bezier-curve {
+  #bezier-curve, #bezier-curve2 {
     fill: none !important;
   }
   /* 为移动箭头设置蓝色填充 */
-  #moving-arrow polygon {
+  #moving-arrow polygon, #moving-arrow2 polygon {
     fill: #2F6DF6 !important;
   }
 
@@ -446,6 +446,17 @@
         <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
         <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
     </g>
+    
+    <!-- 第二个服务器图标 -->
+    <g id="data-node-ny2" transform="translate(135,425) scale(1.2)">
+        <rect x="-6" y="-8" width="12" height="16" rx="1.5" fill="#5078ef" opacity="0.8"/>
+        <rect x="-4" y="-5" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="-1" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <rect x="-4" y="3" width="8" height="2" fill="#ffffff" opacity="0.9"/>
+        <circle cx="-2" cy="-4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+        <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
+    </g>
     <!-- 连接贝塞尔曲线 -->
     <path id="bezier-curve" d="M 660 460 Q 465 350 278 364" 
           fill="none" 
@@ -458,7 +469,15 @@
                  from="450"
                  to="0"
                  dur="1.5s"
-                 fill="freeze"/>
+                 fill="freeze"
+                 id="draw-animation"/>
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-450"
+                 dur="1s"
+                 fill="freeze"
+                 begin="1.5s"
+                 id="erase-animation"/>
     </path>
     
     <!-- 移动的箭头 -->
@@ -474,7 +493,14 @@
                 rotate="auto"
                 calcMode="linear"
                 fill="freeze"
-                begin="0s"/>
+                begin="0s"
+                id="arrow-motion"/>
+            <animate attributeName="opacity"
+                     from="0.9"
+                     to="0"
+                     dur="0.3s"
+                     fill="freeze"
+                     begin="2.4s"/>
         </polygon>
     </g>
     
@@ -489,6 +515,53 @@
           <circle cx="0" cy="12" r="5.5" fill="#fff" opacity="0.9"/>
         </g>
       </g>
+    </g>
+    
+    <!-- 第二个贝塞尔曲线 - 到data-node-ny2 -->
+    <path id="bezier-curve2" d="M 660 460 Q 380 380 151.5 425" 
+          fill="none" 
+          stroke="#2F6DF6" 
+          stroke-width="1.5" 
+          opacity="0.8"
+          stroke-dasharray="520"
+          stroke-dashoffset="520">
+        <animate attributeName="stroke-dashoffset"
+                 from="520"
+                 to="0"
+                 dur="1.5s"
+                 fill="freeze"
+                 id="draw-animation2"/>
+        <animate attributeName="stroke-dashoffset"
+                 from="0"
+                 to="-520"
+                 dur="1s"
+                 fill="freeze"
+                 begin="1.5s"
+                 id="erase-animation2"/>
+    </path>
+    
+    <!-- 第二个移动的箭头 -->
+    <g id="moving-arrow2">
+        <!-- 箭头主体 -->
+        <polygon points="0,-4 8,0 0,4" 
+                 fill="#2F6DF6" 
+                 opacity="0.9">
+            <animateMotion 
+                dur="1.5s" 
+                repeatCount="0"
+                path="M 660 460 Q 380 380 151.5 425"
+                rotate="auto"
+                calcMode="linear"
+                fill="freeze"
+                begin="0s"
+                id="arrow-motion2"/>
+            <animate attributeName="opacity"
+                     from="0.9"
+                     to="0"
+                     dur="0.3s"
+                     fill="freeze"
+                     begin="2.4s"/>
+        </polygon>
     </g>
 </g>
 </svg>
