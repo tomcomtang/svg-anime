@@ -3,7 +3,7 @@ const DottedMap = require('dotted-map').default;
 
 // 创建点状地图 - 使用更小的尺寸
 const map = new DottedMap({ 
-  height: 60,  // 从100减少到60
+  height: 40,  // 从60减少到40
   grid: 'diagonal' 
 });
 
@@ -39,8 +39,8 @@ let svgMap = map.getSVG({
 
 // 手动调整 viewBox，给四个方向都添加 padding
 svgMap = svgMap.replace(
-  'viewBox="0 0 126 60"',
-  'viewBox="-1 -1 128 62"'
+  'viewBox="0 0 84 40"',
+  'viewBox="-1 -1 86 42"'
 );
 
 // 保存到文件

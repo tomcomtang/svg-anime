@@ -9,8 +9,8 @@ export default function Home() {
       paddingTop: "50px"
     }}>
       <img 
-        src="/dotted_world_map_small.svg" 
-        alt="Dotted World Map" 
+        src="/dotted_world_map_with_lines.svg" 
+        alt="Dotted World Map with Lines" 
         style={{ 
           width: "90%", 
           maxWidth: "1000px", 
