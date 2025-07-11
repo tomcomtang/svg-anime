@@ -685,7 +685,7 @@
     </g>
     
     <!-- 第七个贝塞尔曲线 - 到利雅得 -->
-    <path id="bezier-curve7" d="M 663 468 Q 580 470 535 470" 
+    <path id="bezier-curve7" d="M 664 466 Q 590 495 532 475" 
           fill="none" 
           stroke="#2F6DF6" 
           stroke-width="1.5" 
@@ -695,7 +695,7 @@
         <animate attributeName="stroke-dashoffset"
                  from="400"
                  to="0"
-                 dur="4.5s"
+                 dur="4.2s"
                  fill="freeze"
                  id="draw-animation7"/>
         <animate attributeName="stroke-dashoffset"
@@ -716,7 +716,7 @@
             <animateMotion 
                 dur="1.5s" 
                 repeatCount="0"
-                path="M 663 468 Q 580 470 535 470"
+                path="M 664 466 Q 590 495 532 475"
                 rotate="auto"
                 calcMode="linear"
                 fill="freeze"
