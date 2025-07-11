@@ -512,6 +512,24 @@
         <circle cx="-2" cy="0" r="0.6" fill="#3b5bdb" opacity="0.8"/>
         <circle cx="-2" cy="4" r="0.6" fill="#3b5bdb" opacity="0.8"/>
     </g>
+    
+    <!-- 温哥华边缘节点 -->
+    <g id="edge-node-vancouver" transform="translate(145,355) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    
+    <!-- 纽约上方边缘节点 -->
+    <g id="edge-node-ny-north" transform="translate(280,320) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    
+    <!-- 墨西哥边缘节点 -->
+    <g id="edge-node-mexico" transform="translate(185,485) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
     <!-- 连接贝塞尔曲线 -->
     <path id="bezier-curve" d="M 668 438 Q 500 320 278 360" 
           fill="none" 
@@ -852,6 +870,70 @@
                  fill="freeze"
                  begin="1.5s"/>
         </polygon>
+    </g>
+    
+    <!-- 南美洲边缘节点 - 圣保罗 -->
+    <g id="edge-node-sao-paulo" transform="translate(240,550) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    
+    <!-- 南美洲边缘节点 - 布宜诺斯艾利斯 -->
+    <g id="edge-node-buenos-aires" transform="translate(265,630) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 澳大利亚边缘节点 -->
+    <g id="edge-node-australia" transform="translate(700,600) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 西班牙边缘节点 -->
+    <g id="edge-node-spain" transform="translate(400,430) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 韩国边缘节点 -->
+    <g id="edge-node-korea" transform="translate(700,415) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    
+    <!-- 非洲边缘节点 - 尼日利亚 -->
+    <g id="edge-node-nigeria" transform="translate(475,490) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    
+    <!-- 非洲边缘节点 - 南非 -->
+    <g id="edge-node-south-africa" transform="translate(500,570) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 瑞典边缘节点 -->
+    <g id="edge-node-sweden" transform="translate(440,345) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 新几内亚边缘节点 -->
+    <g id="edge-node-new-guinea" transform="translate(750,550) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 雅库茨克边缘节点 -->
+    <g id="edge-node-yakutsk" transform="translate(680,330) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 印度边缘节点 -->
+    <g id="edge-node-india" transform="translate(600,470) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
+    </g>
+    <!-- 伊拉克边缘节点 -->
+    <g id="edge-node-iraq" transform="translate(500,440) scale(1.2)">
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#2F6DF6" stroke-width="1" opacity="0.9"/>
+        <circle cx="0" cy="0" r="2.8" fill="#2F6DF6" opacity="0.9"/>
     </g>
 </g>
 </svg>
